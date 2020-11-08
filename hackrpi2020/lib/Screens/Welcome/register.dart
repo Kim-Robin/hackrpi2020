@@ -36,7 +36,7 @@ class _MyRegisterPageState extends State<RegisterPage> {
     );
 
     final sourceField = TextField(
-      obscureText: true,
+      obscureText: false,
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
