@@ -30,6 +30,9 @@ class Body extends StatelessWidget {
             width: size.width * 0.8,
             child: ClipRRect(
               child: FlatButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
                 padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 color: kPrimaryColor,
                 onPressed: () {
@@ -54,6 +57,9 @@ class Body extends StatelessWidget {
             width: size.width * 0.8,
             child: ClipRRect(
               child: FlatButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30.0),
+                ),
                 padding: EdgeInsets.symmetric(vertical: 20, horizontal: 40),
                 color: kPrimaryColor,
                 onPressed: () {
