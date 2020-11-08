@@ -13,6 +13,7 @@ class WelcomeScreen extends StatelessWidget {
 }
 
 class Body extends StatelessWidget {
+  TextStyle style = TextStyle(fontFamily: 'Montserrat', fontSize: 20.0);
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -22,7 +23,7 @@ class Body extends StatelessWidget {
         children: <Widget>[
           Text(
             "data",
-            style: TextStyle(fontWeight: FontWeight.bold),
+            style: style,
           ),
           // SvgPicture.asset('',height: size.height * 0.4)
           Container(
@@ -47,7 +48,8 @@ class Body extends StatelessWidget {
                 },
                 child: Text(
                   "Login",
-                  style: TextStyle(color: Colors.white),
+                  style: style.copyWith(
+                      color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
             ),
@@ -74,7 +76,8 @@ class Body extends StatelessWidget {
                 },
                 child: Text(
                   "Register",
-                  style: TextStyle(color: Colors.white),
+                  style: style.copyWith(
+                      color: Colors.white, fontWeight: FontWeight.bold),
                 ),
               ),
             ),

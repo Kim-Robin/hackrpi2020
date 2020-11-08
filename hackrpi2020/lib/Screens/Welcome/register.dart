@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hackrpi2020/constants.dart';
 
 class RegisterPage extends StatefulWidget {
   RegisterPage({Key key, this.title}) : super(key: key);
@@ -59,6 +60,7 @@ class _MyRegisterPageState extends State<RegisterPage> {
     );
 
     return Scaffold(
+      appBar: AppBar(title: Text("Corona"), backgroundColor: kPrimaryColor),
       body: SingleChildScrollView(
         child: Center(
           child: Container(

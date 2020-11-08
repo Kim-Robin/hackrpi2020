@@ -73,6 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
 
     return Scaffold(
+      appBar: AppBar(
+        title: Text("Corona"),
+        backgroundColor: kPrimaryColor,
+      ),
       body: SingleChildScrollView(
         child: Center(
           child: Container(
